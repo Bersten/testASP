@@ -1,0 +1,35 @@
+@model List<EcoMvc.Models.Book>
+<link rel="stylesheet" href="/css/Product.css">
+
+<header>
+    Produits - Fierté Française
+</header>
+
+<h1>Liste des Livres</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Tome</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.TomeNumber</td>
+                <td>
+                    <a asp-action="BookDetail" asp-route-id="@book.Id">Détails</a> |
+                    <a asp-action="DeleteBook" asp-route-id="@book.Id">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="AddBook">Ajouter un nouveau livre</a>

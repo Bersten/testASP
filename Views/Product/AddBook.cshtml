@@ -1,0 +1,22 @@
+@model EcoMvc.Models.Book
+<link rel="stylesheet" href="/css/Product.css">
+
+<header>
+    Produits - Fierté Française
+</header>
+
+<h1>Ajouter un Livre</h1>
+
+<form asp-action="AddABook" method="post">
+    <div>
+        <label for="Title">Titre :</label>
+        <input type="text" id="Title" name="Title" value="@Model.Title" required />
+    </div>
+    <div>
+        <label for="TomeNumber">Numéro de Tome :</label>
+        <input type="number" id="TomeNumber" name="TomeNumber" value="@Model.TomeNumber" required />
+    </div>
+    <button type="submit">Ajouter</button>
+</form>
+
+<a asp-action="BookList">Annuler</a>

@@ -1,0 +1,16 @@
+@model EcoMvc.Models.Book
+<link rel="stylesheet" href="/css/Product.css">
+
+<header>
+    Produits - Fierté Française
+</header>
+
+<h1>Détails du Livre</h1>
+
+<p>
+    <strong>ID :</strong> @Model.Id <br />
+    <strong>Title :</strong> @Model.Title <br />
+    <strong>Tome :</strong> @Model.TomeNumber
+</p>
+
+<a asp-action="BookList">Retour à la liste</a>
