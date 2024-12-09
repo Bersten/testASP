@@ -62,14 +62,12 @@ namespace EcoMvc.Controllers
         [HttpGet]
         public IActionResult AddBook()
         {
-            Console.WriteLine("test");
             return View();
         }
 
         [HttpPost]
-        public IActionResult AddABook(Book newBook)
+        public IActionResult AddBook(Book newBook)
         {
-            Console.WriteLine("test2");
             if (ModelState.IsValid)
             {
                 newBook.Id = books.Count > 0 ? books.Max(b => b.Id) + 1 : 1;

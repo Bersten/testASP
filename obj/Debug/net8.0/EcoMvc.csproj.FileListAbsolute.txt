@@ -28,3 +28,4 @@ C:\Users\Administrateur\Documents\EcoMvc\obj\Debug\net8.0\refint\EcoMvc.dll
 C:\Users\Administrateur\Documents\EcoMvc\obj\Debug\net8.0\EcoMvc.pdb
 C:\Users\Administrateur\Documents\EcoMvc\obj\Debug\net8.0\EcoMvc.genruntimeconfig.cache
 C:\Users\Administrateur\Documents\EcoMvc\obj\Debug\net8.0\ref\EcoMvc.dll
+C:\Users\Administrateur\Documents\EcoMvc\obj\Debug\net8.0\EcoMvc.sourcelink.json
