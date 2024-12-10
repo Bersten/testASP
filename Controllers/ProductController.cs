@@ -28,8 +28,8 @@ namespace EcoMvc.Controllers
 
         private static List<Book> books = new List<Book>
         {
-            new Book { Id = 1, Title = "Book A", TomeNumber = 1 },
-            new Book { Id = 2, Title = "Book B", TomeNumber = 2 }
+            new Book { Id = 1, Title = "Harry Poter", TomeNumber = 1 },
+            new Book { Id = 2, Title = "Octobre Rouge", TomeNumber = 2 }
         };
 
         public IActionResult BookList()
